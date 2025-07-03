@@ -9,27 +9,28 @@ export type Lavorazione = {
 
 export const lavorazioni: Lavorazione[] = [
   {
-    slug: "rivestimenti-divani",
-    titolo: "Rivestimenti per divani",
-    descrizione: "Rivestiamo divani e poltrone con tessuti su misura e materiali di qualità.",
+    slug: "ciumati",
+    titolo: "Sostitutzione sciumati",
+    descrizione: "descrizione..",
     icona: Sofa,
   },
   {
-    slug: "tappezzeria-auto",
-    titolo: "Tappezzeria Auto",
-    descrizione: "Interni auto personalizzati, anche su vetture d'epoca.",
+    slug: "tettuccio-auto",
+    titolo: "Sostituzione cielo auto",
+    descrizione: "descrizione..",
     icona: Car,
   },
   {
-    slug: "poltrone",
-    titolo: "Poltrone su misura",
-    descrizione: "Restauro e rivestimento poltrone classiche e moderne.",
+    slug: "pneumatica",
+    titolo: "Pneumatica e meccanismi",
+    descrizione: "descrizione..",
     icona: Armchair,
   },
-  {
-    slug: "sedie",
-    titolo: "Sedia",
-    descrizione: "Restauro e rivestimento poltrone classiche e moderne.",
+
+   {
+    slug: "tappezzeria",
+    titolo: "Tappezzeria",
+    descrizione: "descrizione..",
     icona: Armchair,
   },
 ]

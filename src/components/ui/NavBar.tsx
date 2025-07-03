@@ -12,8 +12,9 @@ export default function Navbar() {
     <header className="fixed top-0 left-0 w-full h-20 bg-[rgb(237,237,233)] text-black z-50 shadow-sm">
       <div className="h-full px-6 flex items-center justify-between w-full">
         {/* Logo cliccabile a sinistra */}
-        <Link href="/" className="hover:opacity-80 transition-opacity">
-          <img src="/images/LogoWhite.svg" alt="Logo NNC" className="h-12" />
+        <Link href="/" className="hover:opacity-80 transition-opacity font-bold">
+          ZONCA
+          {/*<img src="/images/LogoWhite.svg" alt="Logo Zonca" className="h-12" />*/}
         </Link>
         
         {/* Hamburger Menu */}
