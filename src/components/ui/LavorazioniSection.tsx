@@ -1,4 +1,5 @@
 "use client";
+
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import Autoplay from "embla-carousel-autoplay";
@@ -19,7 +20,6 @@ export default function LavorazioniSection() {
   const [api, setApi] = useState<any>(null);
   const progressInterval = useRef<NodeJS.Timeout | null>(null);
 
-  // Duplicazione per effetto loop infinito
   const duplicatedLavorazioni = [...lavorazioni, ...lavorazioni, ...lavorazioni];
 
   const startProgress = () => {
@@ -27,7 +27,7 @@ export default function LavorazioniSection() {
     if (progressInterval.current) {
       clearInterval(progressInterval.current);
     }
-    let startTime = Date.now();
+    const startTime = Date.now();
     progressInterval.current = setInterval(() => {
       const elapsed = Date.now() - startTime;
       const newProgress = Math.min((elapsed / autoplayDelay) * 100, 100);
@@ -82,7 +82,7 @@ export default function LavorazioniSection() {
         LE NOSTRE LAVORAZIONI
       </h2>
 
-      <div className="px-12 sm:px-20 lg:px-24 pb-8 ">
+      <div className="px-12 sm:px-20 lg:px-24 pb-8">
         <Carousel
           setApi={setApi}
           plugins={[
@@ -100,7 +100,6 @@ export default function LavorazioniSection() {
             dragFree: false,
           }}
           className="w-full"
-
         >
           <CarouselContent className="-ml-8 overflow-visible">
             {duplicatedLavorazioni.map((lavorazione, index) => {
@@ -153,7 +152,7 @@ export default function LavorazioniSection() {
                     </div>
 
                     <div className="flex justify-end">
-                      <Link href={`/Lavorazioni/${lavorazione.slug}`}>
+                      <Link href={`/lavorazioni/${lavorazione.slug}`}>
                         <Button
                           variant="secondary"
                           size="sm"

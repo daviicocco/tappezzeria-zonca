@@ -1,9 +1,9 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import { lavorazioni } from "@/data/lavorazioni"
-import { Button } from "@/components/ui/button"
-import { Card } from "@/components/ui/card"
+import Link from "next/link";
+import { lavorazioni } from "@/data/lavorazioni";
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
 
 export default function LavorazioniPage() {
   return (
@@ -21,7 +21,7 @@ export default function LavorazioniPage() {
       {/* Griglia delle lavorazioni */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {lavorazioni.map((lavorazione) => {
-          const Icon = lavorazione.icona
+          const Icon = lavorazione.icona;
           return (
             <Card
               key={lavorazione.slug}
@@ -41,9 +41,9 @@ export default function LavorazioniPage() {
                 </Link>
               </div>
             </Card>
-          )
+          );
         })}
       </div>
     </main>
-  )
+  );
 }
