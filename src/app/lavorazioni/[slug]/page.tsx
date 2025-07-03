@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { lavorazioni } from "@/data/lavorazioni";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 type Props = {
   params: Promise<{
@@ -53,9 +54,12 @@ export default async function LavorazionePage({ params }: Props) {
         <h2 className="text-xl font-semibold mb-4 text-gray-800">
           Vuoi saperne di più?
         </h2>
+        <Link href={`/contatti`}>
         <Button variant="default" size="lg" className="text-sm sm:text-base">
           Richiedi un preventivo
         </Button>
+        </Link>
+        
       </div>
     </div>
   );
