@@ -1,6 +1,8 @@
 // AboutSection
 "use client";
 
+import Link from "next/link";
+
 export default function AboutSection() {
   return (
     <section className="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-10 px-6 py-8">
@@ -11,6 +13,18 @@ export default function AboutSection() {
           dei meccanismi dei sedili per mezzi industriali come: <b>camion, trattori agricoli, veicoli per la nettezza urbana e 
           macchine movimento terra</b>. Grazie alla competenza maturata nel tempo, offriamo soluzioni di qualità, 
           affidabili e durature, per garantire comfort, sicurezza e funzionalità a chi lavora ogni giorno su questi mezzi. 
+        </p>
+        <p className="text-lg">
+          La nostra officina si trova 
+          <b>
+            <Link href="https://maps.google.com/?q=Via+Serci+Centro+Monsignor+51+Villagreca+SU+Sardegna"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:opacity-80 transition-opacity no-underline">
+            in Via Serci Centro Monsignor 51, Villagreca (SU) - Sardegna,
+            </Link>
+              </b>
+              facilmente raggiungibile dalla SS 131.
         </p>
       </div>
 
