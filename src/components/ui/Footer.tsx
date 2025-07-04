@@ -7,9 +7,13 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto space-y-6">
         {/* Logo */}
         <div>
-          <h1 className="text-3xl font-bold">ZONCA</h1>
+          <img
+            src="/images/logo-bianco.svg"
+            alt="Logo Zonca"
+            className="h-10 mx-auto"
+          />
         </div>
-       
+
         {/* Email e PEC */}
         <div className="text-sm space-y-1">
           <p>
@@ -29,7 +33,7 @@ export default function Footer() {
             </Link>
           </p>
         </div>
-       
+
         {/* Officina */}
         <div className="text-xs text-muted-foreground">
           OFFICINA:
@@ -43,17 +47,15 @@ export default function Footer() {
           </Link>
         </div>
         {/* Dati Fiscali */}
-        <div className="text-xs">
-          P.IVA: 02372910923
-        </div>
-       
+        <div className="text-xs">P.IVA: 02372910923</div>
+
         {/* Separatore shadcn */}
         <hr className="border-t border-white w-2 mx-auto" />
-       
+
         {/* Privacy e policy */}
         <div className="text-xs">
           <Link
-            href="/privacy"
+            href="/privacy-policy"
             className="hover:text-white transition-colors"
           >
             Privacy & Policy

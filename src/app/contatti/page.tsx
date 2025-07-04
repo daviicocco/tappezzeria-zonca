@@ -207,7 +207,7 @@ export default function ContactSection() {
                     Lunedì - Venerdì:
                   </span>
                   <span className="font-medium">
-                    8:00 - 12:00, 15:00 - 18:00
+                    8:00 - 18:00
                   </span>
                 </div>
                 <div className="flex justify-between">

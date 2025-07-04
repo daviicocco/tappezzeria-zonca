@@ -157,7 +157,7 @@ export default function ContactSection() {
               <CardContent className="space-y-2">
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">Lunedì - Venerdì:</span>
-                  <span className="font-medium">8:00 - 12:00, 15:00 - 18:00</span>
+                  <span className="font-medium">8:00 - 18:00</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">Sabato:</span>
