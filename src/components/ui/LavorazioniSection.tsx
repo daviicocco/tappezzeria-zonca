@@ -33,9 +33,18 @@ export default function LavorazioniSection() {
     };
   }, [api]);
 
+  // Funzione per determinare la dimensione del font in base alla lunghezza del titolo
+  const getTitleFontSize = (title: string) => {
+    const length = title.length;
+    if (length <= 15) return "text-xl sm:text-2xl";
+    if (length <= 25) return "text-lg sm:text-xl";
+    if (length <= 35) return "text-base sm:text-lg";
+    return "text-sm sm:text-base";
+  };
+
   return (
     <section className="max-w-6xl mx-auto px-6 py-8 space-y-8 mt-10">
-      <h2 className="text-3xl font-tanker font-bold text-center text-black">
+      <h2 className="text-3xl font-bold text-center text-black">
         LE NOSTRE LAVORAZIONI
       </h2>
 
@@ -75,17 +84,18 @@ export default function LavorazioniSection() {
                       p-6
                       flex
                       flex-col
-                      justify-between
                       w-full
                       hover:shadow-xl
                       transition-all
                       duration-300
+                      relative
                     "
                     style={{ minHeight: 200 }}
                   >
-                    <div className="flex justify-between items-center mb-6">
+                    {/* Header con titolo e icona */}
+                    <div className="flex justify-between items-start mb-4 flex-1">
                       <div className="flex-1 pr-4">
-                        <h3 className="text-xl sm:text-2xl font-tanker font-bold text-black leading-tight">
+                        <h3 className={`${getTitleFontSize(lavorazione.titolo)} font-tanker font-bold text-black leading-tight`}>
                           {lavorazione.titolo}
                         </h3>
                       </div>
@@ -94,7 +104,8 @@ export default function LavorazioniSection() {
                       </div>
                     </div>
 
-                    <div className="flex justify-end">
+                    {/* Bottone fisso in basso */}
+                    <div className="flex justify-end mt-auto">
                       <Link href={`/lavorazioni/${lavorazione.slug}`}>
                         <Button
                           variant="secondary"

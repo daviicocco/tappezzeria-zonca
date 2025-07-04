@@ -93,8 +93,8 @@ export default function ContactSection() {
 
   return (
     <>
-      <section className="max-w-6xl mx-auto px-8 py-8 space-y-8 mt-10">
-        <h2 className="text-3xl font-tanker font-bold text-center text-black">
+      <section className="max-w-6xl mx-auto px-6 py-6 space-y-8 mt-10 mb-20">
+        <h2 className="text-3xl font-bold text-center text-black">
           CONTATTI
         </h2>
 
