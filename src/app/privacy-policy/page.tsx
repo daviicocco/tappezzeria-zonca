@@ -15,30 +15,29 @@ export default function PrivacyPolicyPage() {
       <div className="max-w-4xl mx-auto px-6 py-12">
         {/* Sezione 1: Titolare del trattamento */}
         <section>
-          <h2 className="text-2xl font-tanker font-bold text-black mb-4">
+          <h2 className="text-2xl font-bold text-black mb-4">
             1. Titolare del Trattamento
           </h2>
           <div className="prose prose-gray max-w-none">
             <p className="text-gray-700 leading-relaxed">
               Il titolare del trattamento dei dati personali è{" "}
-              <strong>[Nome Azienda]</strong>, con sede in [Indirizzo completo],
-              Partita IVA [P.IVA], Codice Fiscale [CF].
+              <strong>Antimo Zonca</strong>, ditta individuale, con sede in Via Serci Centro Monsignor 51, Villagreca (SU) - Sardegna, Partita IVA 02372910923.
             </p>
             <p className="text-gray-700 leading-relaxed mt-4">
               <strong>Contatti:</strong>
               <br />
-              Email: privacy@[tuodominio].com
+              Email: mimmo.zonca@gmail.com
               <br />
-              Telefono: [Numero di telefono]
+              Telefono: +39 333 945 6979
               <br />
-              PEC: [Indirizzo PEC]
+              PEC: [Inserisci indirizzo PEC se disponibile]
             </p>
           </div>
         </section>
 
         {/* Sezione 2: Tipologie di dati raccolti */}
         <section>
-          <h2 className="text-2xl font-tanker font-bold text-black mb-4">
+          <h2 className="text-2xl font-bold text-black mb-4">
             2. Tipologie di Dati Raccolti
           </h2>
           <div className="prose prose-gray max-w-none">
@@ -47,20 +46,10 @@ export default function PrivacyPolicyPage() {
             </p>
             <ul className="list-disc ml-6 mt-4 text-gray-700 space-y-2">
               <li>
-                <strong>Dati di contatto:</strong> nome, cognome, email, numero
-                di telefono, indirizzo
+                <strong>Dati di contatto:</strong> nome, cognome, email, numero di telefono, eventuale indirizzo fornito dall'utente nel modulo preventivo.
               </li>
               <li>
-                <strong>Dati di navigazione:</strong> indirizzo IP, tipo di
-                browser, pagine visitate, tempo di permanenza
-              </li>
-              <li>
-                <strong>Dati tecnici:</strong> cookies, identificatori di
-                dispositivo, dati di utilizzo del sito
-              </li>
-              <li>
-                <strong>Dati commerciali:</strong> preferenze, cronologia degli
-                acquisti, comunicazioni
+                <strong>Dati tecnici:</strong> eventuali cookies tecnici necessari per il funzionamento del sito.
               </li>
             </ul>
           </div>
@@ -68,48 +57,26 @@ export default function PrivacyPolicyPage() {
 
         {/* Sezione 3: Finalità del trattamento */}
         <section>
-          <h2 className="text-2xl font-tanker font-bold text-black mb-4">
+          <h2 className="text-2xl font-bold text-black mb-4">
             3. Finalità del Trattamento
           </h2>
           <div className="prose prose-gray max-w-none">
             <p className="text-gray-700 leading-relaxed">
-              I tuoi dati personali vengono trattati per le seguenti finalità:
+              I tuoi dati personali vengono trattati esclusivamente per:
             </p>
-            <div className="mt-4 space-y-4">
-              <div className="border-l-4 border-indigo-500 pl-4">
-                <h3 className="font-semibold text-gray-900">
-                  Finalità contrattuali (Art. 6.1.b GDPR)
-                </h3>
-                <p className="text-gray-700">
-                  Erogazione dei servizi richiesti, gestione dei contratti,
-                  fatturazione
-                </p>
-              </div>
-              <div className="border-l-4 border-indigo-500 pl-4">
-                <h3 className="font-semibold text-gray-900">
-                  Finalità di marketing (Art. 6.1.a GDPR)
-                </h3>
-                <p className="text-gray-700">
-                  Invio di comunicazioni promozionali, newsletter, offerte
-                  commerciali
-                </p>
-              </div>
-              <div className="border-l-4 border-indigo-500 pl-4">
-                <h3 className="font-semibold text-gray-900">
-                  Finalità tecniche (Art. 6.1.f GDPR)
-                </h3>
-                <p className="text-gray-700">
-                  Funzionamento del sito web, sicurezza informatica, analisi
-                  statistiche
-                </p>
-              </div>
-            </div>
+            <ul className="list-disc ml-6 mt-4 text-gray-700 space-y-2">
+              <li>Rispondere alle richieste di preventivo inviate tramite il modulo di contatto.</li>
+              <li>Garantire il corretto funzionamento del sito web.</li>
+            </ul>
+            <p className="mt-4 text-gray-700">
+              Non utilizziamo i dati per finalità di marketing o comunicazioni promozionali senza tuo esplicito consenso.
+            </p>
           </div>
         </section>
 
         {/* Sezione 4: Base giuridica */}
         <section>
-          <h2 className="text-2xl font-tanker font-bold text-black mb-4">
+          <h2 className="text-2xl font-bold text-black mb-4">
             4. Base Giuridica del Trattamento
           </h2>
           <div className="prose prose-gray max-w-none">
@@ -118,20 +85,10 @@ export default function PrivacyPolicyPage() {
             </p>
             <ul className="list-disc ml-6 mt-4 text-gray-700 space-y-2">
               <li>
-                <strong>Consenso dell'interessato</strong> (Art. 6.1.a GDPR) per
-                finalità di marketing
+                <strong>Consenso espresso</strong> dell’interessato al momento dell’invio del modulo preventivo.
               </li>
               <li>
-                <strong>Esecuzione di un contratto</strong> (Art. 6.1.b GDPR)
-                per l'erogazione dei servizi
-              </li>
-              <li>
-                <strong>Interesse legittimo</strong> (Art. 6.1.f GDPR) per
-                sicurezza e funzionamento del sito
-              </li>
-              <li>
-                <strong>Obbligo di legge</strong> (Art. 6.1.c GDPR) per
-                adempimenti fiscali e contabili
+                <strong>Interesse legittimo</strong> per garantire il funzionamento tecnico del sito.
               </li>
             </ul>
           </div>
@@ -139,223 +96,126 @@ export default function PrivacyPolicyPage() {
 
         {/* Sezione 5: Modalità di trattamento */}
         <section>
-          <h2 className="text-2xl font-tanker font-bold text-black mb-4">
+          <h2 className="text-2xl font-bold text-black mb-4">
             5. Modalità di Trattamento
           </h2>
           <div className="prose prose-gray max-w-none">
             <p className="text-gray-700 leading-relaxed">
-              I dati personali sono trattati con strumenti automatizzati e/o
-              manuali, nel rispetto delle misure di sicurezza previste dal GDPR.
-              Adottiamo misure tecniche e organizzative adeguate per proteggere
-              i dati da accessi non autorizzati, perdita, distruzione o
-              divulgazione.
+              I dati personali sono trattati in modo manuale e con strumenti informatici, adottando misure di sicurezza tecniche e organizzative adeguate a proteggerli da accessi non autorizzati o divulgazioni.
             </p>
           </div>
         </section>
 
         {/* Sezione 6: Conservazione dei dati */}
         <section>
-          <h2 className="text-2xl font-tanker font-bold text-black mb-4">
+          <h2 className="text-2xl font-bold text-black mb-4">
             6. Conservazione dei Dati
           </h2>
           <div className="prose prose-gray max-w-none">
             <p className="text-gray-700 leading-relaxed">
-              I dati personali sono conservati per il tempo strettamente
-              necessario agli scopi per cui sono stati raccolti:
+              I dati raccolti tramite il modulo di contatto sono conservati per un periodo massimo di 2 anni dalla loro raccolta o fino a revoca del consenso.
             </p>
-            <ul className="list-disc ml-6 mt-4 text-gray-700 space-y-2">
-              <li>
-                <strong>Dati contrattuali:</strong> per tutta la durata del
-                rapporto contrattuale e per 10 anni successivi
-              </li>
-              <li>
-                <strong>Dati di marketing:</strong> fino alla revoca del
-                consenso o per 2 anni dall'ultima attività
-              </li>
-              <li>
-                <strong>Dati di navigazione:</strong> fino a 13 mesi dalla
-                raccolta
-              </li>
-              <li>
-                <strong>Dati fiscali:</strong> per 10 anni come previsto dalla
-                normativa fiscale
-              </li>
-            </ul>
           </div>
         </section>
 
         {/* Sezione 7: Destinatari dei dati */}
         <section>
-          <h2 className="text-2xl font-tanker font-bold text-black mb-4">
+          <h2 className="text-2xl font-bold text-black mb-4">
             7. Destinatari dei Dati
           </h2>
           <div className="prose prose-gray max-w-none">
             <p className="text-gray-700 leading-relaxed">
-              I dati personali possono essere comunicati a:
+              I dati personali non sono comunicati a terze parti, salvo eventuali obblighi di legge o fornitori strettamente necessari (es. provider hosting).
             </p>
-            <ul className="list-disc ml-6 mt-4 text-gray-700 space-y-2">
-              <li>Personale interno autorizzato al trattamento</li>
-              <li>Fornitori di servizi IT e hosting</li>
-              <li>Consulenti legali, fiscali e commerciali</li>
-              <li>Autorità competenti quando previsto dalla legge</li>
-              <li>Partner commerciali previa esplicita autorizzazione</li>
-            </ul>
           </div>
         </section>
 
         {/* Sezione 8: Trasferimento dati */}
         <section>
-          <h2 className="text-2xl font-tanker font-bold text-black mb-4">
+          <h2 className="text-2xl font-bold text-black mb-4">
             8. Trasferimento dei Dati
           </h2>
           <div className="prose prose-gray max-w-none">
             <p className="text-gray-700 leading-relaxed">
-              I dati personali sono trattati principalmente all'interno
-              dell'Unione Europea. Eventuali trasferimenti verso paesi terzi
-              avvengono nel rispetto delle garanzie previste dal GDPR, mediante
-              decisioni di adeguatezza della Commissione Europea o clausole
-              contrattuali standard.
+              I dati sono trattati principalmente all’interno dell’Unione Europea. Se utilizzi servizi esterni che trasferiscono dati fuori dall’UE, garantiamo che rispettino le normative GDPR.
             </p>
           </div>
         </section>
 
         {/* Sezione 9: Diritti dell'interessato */}
         <section>
-          <h2 className="text-2xl font-tanker font-bold text-black mb-4">
+          <h2 className="text-2xl font-bold text-black mb-4">
             9. Diritti dell'Interessato
           </h2>
           <div className="prose prose-gray max-w-none">
             <p className="text-gray-700 leading-relaxed">
-              In qualità di interessato, hai diritto a:
+              Hai diritto di:
             </p>
-            <div className="grid md:grid-cols-2 gap-4 mt-4">
-              <div className="bg-gray-50 p-4 rounded-lg">
-                <h3 className="font-semibold text-gray-900 mb-2">
-                  Accesso (Art. 15 GDPR)
-                </h3>
-                <p className="text-sm text-gray-700">
-                  Ottenere informazioni sui tuoi dati e una copia degli stessi
-                </p>
-              </div>
-              <div className="bg-gray-50 p-4 rounded-lg">
-                <h3 className="font-semibold text-gray-900 mb-2">
-                  Rettifica (Art. 16 GDPR)
-                </h3>
-                <p className="text-sm text-gray-700">
-                  Correggere dati inesatti o completare dati incompleti
-                </p>
-              </div>
-              <div className="bg-gray-50 p-4 rounded-lg">
-                <h3 className="font-semibold text-gray-900 mb-2">
-                  Cancellazione (Art. 17 GDPR)
-                </h3>
-                <p className="text-sm text-gray-700">
-                  Richiedere la cancellazione dei dati quando lecito
-                </p>
-              </div>
-              <div className="bg-gray-50 p-4 rounded-lg">
-                <h3 className="font-semibold text-gray-900 mb-2">
-                  Limitazione (Art. 18 GDPR)
-                </h3>
-                <p className="text-sm text-gray-700">
-                  Limitare il trattamento in determinati casi
-                </p>
-              </div>
-              <div className="bg-gray-50 p-4 rounded-lg">
-                <h3 className="font-semibold text-gray-900 mb-2">
-                  Portabilità (Art. 20 GDPR)
-                </h3>
-                <p className="text-sm text-gray-700">
-                  Ricevere i dati in formato strutturato e leggibile
-                </p>
-              </div>
-              <div className="bg-gray-50 p-4 rounded-lg">
-                <h3 className="font-semibold text-gray-900 mb-2">
-                  Opposizione (Art. 21 GDPR)
-                </h3>
-                <p className="text-sm text-gray-700">
-                  Opporti al trattamento per motivi legittimi
-                </p>
-              </div>
-            </div>
+            <ul className="list-disc ml-6 mt-4 text-gray-700 space-y-2">
+              <li>Accedere ai tuoi dati personali.</li>
+              <li>Chiedere la rettifica o cancellazione.</li>
+              <li>Limitare o opporsi al trattamento.</li>
+              <li>Richiedere la portabilità dei dati.</li>
+              <li>Revocare il consenso in qualsiasi momento senza pregiudicare la liceità del trattamento basata sul consenso prima della revoca.</li>
+              <li>Presentare reclamo all’Autorità Garante per la protezione dei dati personali.</li>
+            </ul>
           </div>
         </section>
 
         {/* Sezione 10: Cookies */}
         <section>
-          <h2 className="text-2xl font-tanker font-bold text-black mb-4">
+          <h2 className="text-2xl font-bold text-black mb-4">
             10. Cookies
           </h2>
           <div className="prose prose-gray max-w-none">
             <p className="text-gray-700 leading-relaxed">
-              Il nostro sito utilizza cookies tecnici necessari per il
-              funzionamento e cookies di profilazione per migliorare
-              l'esperienza utente. Puoi gestire le tue preferenze tramite il
-              banner cookies o le impostazioni del browser.
-            </p>
-            <p className="text-gray-700 leading-relaxed mt-4">
-              Per maggiori informazioni, consulta la nostra{" "}
-              <a
-                href="/cookie-policy"
-                className="text-indigo-600 hover:text-indigo-800 underline"
-              >
-                Cookie Policy
-              </a>
-              .
+              Il sito utilizza esclusivamente cookies tecnici necessari per il corretto funzionamento. Non vengono utilizzati cookies di profilazione o di terze parti.
             </p>
           </div>
         </section>
 
-        {/* Sezione 11: Reclami */}
+        {/* Sezione 11: Diritto di Reclamo */}
         <section>
-          <h2 className="text-2xl font-tanker font-bold text-black mb-4">
+          <h2 className="text-2xl font-bold text-black mb-4">
             11. Diritto di Reclamo
           </h2>
           <div className="prose prose-gray max-w-none">
             <p className="text-gray-700 leading-relaxed">
-              Hai il diritto di presentare reclamo all'Autorità Garante per la
-              Protezione dei Dati Personali (www.garanteprivacy.it) se ritieni
-              che il trattamento dei tuoi dati violi la normativa vigente.
+              Puoi presentare reclamo all’Autorità Garante per la Protezione dei Dati Personali (<a href="https://www.garanteprivacy.it" className="text-indigo-600 hover:text-indigo-800 underline" target="_blank" rel="noreferrer">www.garanteprivacy.it</a>) se ritieni che il trattamento dei tuoi dati non sia conforme alla legge.
             </p>
           </div>
         </section>
 
         {/* Sezione 12: Modifiche */}
         <section>
-          <h2 className="text-2xl font-tanker font-bold text-black mb-4">
+          <h2 className="text-2xl font-bold text-black mb-4">
             12. Modifiche alla Privacy Policy
           </h2>
           <div className="prose prose-gray max-w-none">
             <p className="text-gray-700 leading-relaxed">
-              Ci riserviamo il diritto di modificare questa Privacy Policy in
-              qualsiasi momento. Le modifiche saranno pubblicate su questa
-              pagina con indicazione della data di ultimo aggiornamento.
+              Ci riserviamo il diritto di aggiornare questa Privacy Policy in qualsiasi momento, pubblicando le modifiche su questa pagina con data di aggiornamento.
             </p>
           </div>
         </section>
 
         {/* Contatti */}
         <section className="bg-indigo-50 rounded-lg p-6">
-          <h2 className="text-2xl font-tanker font-bold text-black mb-4">
+          <h2 className="text-2xl font-bold text-black mb-4">
             Contatti per la Privacy
           </h2>
           <div className="prose prose-gray max-w-none">
             <p className="text-gray-700 leading-relaxed">
-              Per qualsiasi domanda relativa al trattamento dei tuoi dati
-              personali o per esercitare i tuoi diritti, puoi contattarci:
+              Per qualsiasi domanda o richiesta relativa alla privacy, puoi contattarci:
             </p>
             <div className="mt-4 space-y-2">
               <p className="text-gray-700">
-                <strong>Email:</strong> privacy@[tuodominio].com
+                <strong>Email:</strong> mimmo.zonca@gmail.com
               </p>
               <p className="text-gray-700">
-                <strong>Telefono:</strong> [Numero di telefono]
+                <strong>Telefono:</strong> +39 333 945 6979
               </p>
               <p className="text-gray-700">
-                <strong>Indirizzo:</strong> [Indirizzo completo]
-              </p>
-              <p className="text-gray-700">
-                <strong>PEC:</strong> [Indirizzo PEC]
+                <strong>Indirizzo:</strong> Via Serci Centro Monsignor 51, Villagreca (SU) - Sardegna
               </p>
             </div>
           </div>
