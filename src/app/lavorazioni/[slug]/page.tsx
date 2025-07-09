@@ -31,11 +31,11 @@ export default async function LavorazionePage({ params }: Props) {
       </div>
      
       {/* Galleria immagini */}
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-12">
+      <div className="flex flex-wrap justify-center gap-4 mb-12">
         {lavorazione.immagini.map((src, i) => (
           <div
             key={i}
-            className="overflow-hidden rounded-xl shadow hover:shadow-lg transition-shadow duration-300"
+            className="w-full sm:w-80 overflow-hidden rounded-xl shadow hover:shadow-lg transition-shadow duration-300"
           >
             <img
               src={src}

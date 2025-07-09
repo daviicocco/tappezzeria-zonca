@@ -24,9 +24,8 @@ export const lavorazioni: Lavorazione[] = [
       "Intervento su sedili usurati con sostituzione dei materiali schiumati interni per ripristinare il comfort e la forma originale.",
     icona: Sofa,
     immagini: [
-      "/images/schiumati-1.jpg",
-      "/images/schiumati-2.jpg",
-      "/images/schiumati-3.jpg",
+      "/images/schiumati/schiumato-1.webp",
+      "/images/schiumati/schiumato-2.webp",
     ],
   },
   {
@@ -36,9 +35,10 @@ export const lavorazioni: Lavorazione[] = [
       "Rivestimento completo degli interni del veicolo con materiali personalizzati: tessuti, ecopelle o vera pelle, secondo specifiche del cliente o standard OEM.",
     icona: Armchair,
     immagini: [
-      "/images/tappezzeria-completa/tappezzeria-1.jpg",
-      "/images/tappezzeria-completa/tappezzeria-2.jpg",
-      "/images/tappezzeria-completa/tappezzeria-3.jpg",
+      "/images/tessuti/tessuto-1.webp",
+      "/images/tessuti/tessuto-2.webp",
+      "/images/tessuti/sedile-1.webp",
+
     ],
   },
   {
@@ -48,9 +48,8 @@ export const lavorazioni: Lavorazione[] = [
       "Realizzazione artigianale di cuscini ergonomici e resistenti su misura per veicoli di servizio, come mezzi per la raccolta rifiuti, con materiali antiusura.",
     icona: Truck,
     immagini: [
-      "/img/cuscini-custom-nettezza-urbana/cuscini-1.jpg",
-      "/img/cuscini-custom-nettezza-urbana/cuscini-2.jpg",
-      "/img/cuscini-custom-nettezza-urbana/cuscini-3.jpg",
+      "/images/cuscini/cuscino-1.webp",
+      "/images/cuscini/cuscino-2.webp",
     ],
   },
   {
@@ -60,9 +59,8 @@ export const lavorazioni: Lavorazione[] = [
       "Rimozione e rifacimento del rivestimento del cielo del veicolo con materiali di qualità, eliminando cedimenti o scollature.",
     icona: Car,
     immagini: [
-      "/images/sostituzione-cielo-auto/cielo-1.jpg",
-      "/img/sostituzione-cielo-auto/cielo-2.jpg",
-      "/img/sostituzione-cielo-auto/cielo-3.jpg",
+      "/images/tettuccio/tettuccio-1.webp",
+      "/images/tettuccio/tettuccio-2.webp",
     ],
   },
   {
@@ -72,9 +70,9 @@ export const lavorazioni: Lavorazione[] = [
       "Manutenzione e sostituzione dei sistemi pneumatici e meccanici dei sedili, compresi ammortizzatori e regolazioni lombari, per garantire funzionalità e sicurezza.",
     icona: Cog,
     immagini: [
-      "/img/pneumatica-sedili/pneumatica-1.jpg",
-      "/img/pneumatica-sedili/pneumatica-2.jpg",
-      "/img/pneumatica-sedili/pneumatica-3.jpg",
+      "/images/meccanismi/meccanismo-1.jpg",
+      "/images/meccanismi/meccanismo-2.jpg",
+      "/images/meccanismi/meccanismo-3.webp",
     ],
   },
   {
