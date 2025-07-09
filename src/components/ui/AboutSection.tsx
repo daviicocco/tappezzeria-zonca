@@ -30,7 +30,7 @@ export default function AboutSection() {
 
       <div className="flex-1 aspect-[4/3] rounded-lg overflow-hidden">
         <img
-          src="/images/foto-team.webp"
+          src="/images/foto-home.webp"
           alt="foto-team"
           className="w-full h-full object-cover rounded-lg"
         />

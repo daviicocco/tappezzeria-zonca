@@ -12,11 +12,11 @@ type Props = {
 export default async function LavorazionePage({ params }: Props) {
   const { slug } = await params;
   const lavorazione = lavorazioni.find((l) => l.slug === slug);
-  
+ 
   if (!lavorazione) return notFound();
-  
+ 
   const Icon = lavorazione.icona;
-  
+ 
   return (
     <div className="max-w-5xl mx-auto px-4 py-16 sm:px-6 mt-16">
       {/* Header */}
@@ -29,37 +29,33 @@ export default async function LavorazionePage({ params }: Props) {
           {lavorazione.descrizione}
         </p>
       </div>
-      
+     
       {/* Galleria immagini */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-12">
-        {/* Sostituisci questi src con immagini reali */}
-        {["/img/lavorazione1.jpg", "/img/lavorazione2.jpg", "/img/lavorazione3.jpg"].map(
-          (src, i) => (
-            <div
-              key={i}
-              className="overflow-hidden rounded-xl shadow hover:shadow-lg transition-shadow duration-300"
-            >
-              <img
-                src={src}
-                alt={`Esempio lavorazione ${i + 1}`}
-                className="w-full h-60 object-cover"
-              />
-            </div>
-          )
-        )}
+        {lavorazione.immagini.map((src, i) => (
+          <div
+            key={i}
+            className="overflow-hidden rounded-xl shadow hover:shadow-lg transition-shadow duration-300"
+          >
+            <img
+              src={src}
+              alt={`${lavorazione.titolo} - Esempio ${i + 1}`}
+              className="w-full h-60 object-cover"
+            />
+          </div>
+        ))}
       </div>
-      
+     
       {/* CTA finali */}
       <div className="text-center">
         <h2 className="text-xl font-semibold mb-4 text-gray-800">
           Vuoi saperne di più?
         </h2>
         <Link href={`/contatti`}>
-        <Button variant="default" size="lg" className="text-sm sm:text-base">
-          Richiedi un preventivo
-        </Button>
+          <Button variant="default" size="lg" className="text-sm sm:text-base">
+            Richiedi un preventivo
+          </Button>
         </Link>
-        
       </div>
     </div>
   );
