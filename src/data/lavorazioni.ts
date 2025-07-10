@@ -67,7 +67,7 @@ export const lavorazioni: Lavorazione[] = [
     slug: "pneumatica-sedili",
     titolo: "Ripristino Meccanismi e Pneumatica",
     descrizione:
-      "Manutenzione e sostituzione dei sistemi pneumatici e meccanici dei sedili, compresi ammortizzatori e regolazioni lombari, per garantire funzionalità e sicurezza.",
+      "Manutenzione e sostituzione dei sistemi pneumatici e meccanici dei sedili, compresi ammortizzatori, per garantire funzionalità e sicurezza.",
     icona: Cog,
     immagini: [
       "/images/meccanismi/meccanismo-1.jpg",
@@ -82,9 +82,9 @@ export const lavorazioni: Lavorazione[] = [
       "Selezione e fornitura di sedili usati originali in ottime condizioni, disponibili su richiesta per veicoli commerciali e o industriali.",
     icona: ShoppingCart,
     immagini: [
-      "/img/vendita-sedili-usati/sedili-usati-1.jpg",
-      "/img/vendita-sedili-usati/sedili-usati-2.jpg",
-      "/img/vendita-sedili-usati/sedili-usati-3.jpg",
+      "/images/sedili/sedile-1.jpg",
+      "/images/sedili/sedile-2.jpg",
+      "/images/sedili/sedile-3.jpg",
     ],
   },
 ];

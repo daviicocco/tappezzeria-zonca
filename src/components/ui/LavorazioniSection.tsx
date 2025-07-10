@@ -80,12 +80,15 @@ export default function LavorazioniSection() {
                       bg-white
                       rounded-lg
                       shadow-lg
+                      border
+                      border-gray-200
                       aspect-[3/2]
                       p-6
                       flex
                       flex-col
                       w-full
                       hover:shadow-xl
+                      hover:border-gray-300
                       transition-all
                       duration-300
                       relative
@@ -95,7 +98,7 @@ export default function LavorazioniSection() {
                     {/* Header con titolo e icona */}
                     <div className="flex justify-between items-start mb-4 flex-1">
                       <div className="flex-1 pr-4">
-                        <h3 className={`${getTitleFontSize(lavorazione.titolo)} font-tanker font-bold text-black leading-tight`}>
+                        <h3 className={`${getTitleFontSize(lavorazione.titolo)} font-bold text-black leading-tight`}>
                           {lavorazione.titolo}
                         </h3>
                       </div>

@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { lavorazioni } from "@/data/lavorazioni";
 import { Button } from "@/components/ui/button";
+import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 
 type Props = {
@@ -19,6 +20,20 @@ export default async function LavorazionePage({ params }: Props) {
  
   return (
     <div className="max-w-5xl mx-auto px-4 py-16 sm:px-6 mt-16">
+      {/* Bottone di ritorno */}
+      <div className="mb-8">
+        <Link href="/lavorazioni">
+          <Button 
+            variant="ghost" 
+            size="sm" 
+            className="text-gray-600 hover:text-gray-900 transition-colors duration-200 p-0"
+          >
+            <ArrowLeft className="w-4 h-4 mr-1" />
+            Torna alle lavorazioni
+          </Button>
+        </Link>
+      </div>
+
       {/* Header */}
       <div className="text-center mb-12">
         <Icon className="w-14 h-14 text-indigo-600 mx-auto mb-4" />

@@ -30,7 +30,7 @@ export async function POST(request: Request) {
     // Email da inviare a te (notifica nuovo preventivo)
     const mailToYou = {
       from: `"Sito Web" <${process.env.SMTP_USER}>`,
-      to: 'daviicocco05@gmail.com',
+      to: 'tappezzeriazonca@gmail.com',
       subject: `Nuova richiesta preventivo da ${nome}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f8fafc;">

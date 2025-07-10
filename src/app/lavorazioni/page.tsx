@@ -35,7 +35,10 @@ export default function LavorazioniPage() {
 
               <div className="mt-6 text-center">
                 <Link href={`/lavorazioni/${lavorazione.slug}`} passHref>
-                  <Button variant="secondary" className="w-full text-sm">
+                  <Button 
+                    variant="secondary" 
+                    className="w-full text-sm transition-all duration-300 hover:scale-105 hover:shadow-md"
+                  >
                     SCOPRI
                   </Button>
                 </Link>
